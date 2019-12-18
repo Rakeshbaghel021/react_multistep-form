@@ -1,6 +1,8 @@
 import React from "react";
 
-export default function Form2step(){
+import { Link } from 'react-router-dom';
+
+export default function Form2step({ data, handleChange }){
     return(
         <div className="main-div">
             <div className="add-user">
@@ -28,8 +30,10 @@ export default function Form2step(){
                  <label htmlFor="name"> Fullname</label>
                   <input
                   className="form-control"
-                   name="email"
+                   name="fullName"
                     type="text"
+                    defaultValue={data.fullName}
+                    onChange={handleChange}
                    placeholder=""/>
                    </div>
                    {/* <div className="email-grp">
@@ -43,10 +47,10 @@ export default function Form2step(){
                    <div className="email-grp">
                    <label htmlFor="select"> Country</label>
                    <select>
-                   <option selected value="Country">Country</option>
+                   <option selected defaultValue={data.fullName} onChange={handleChange}>Country</option>
                         <option value="India">India</option>
                          <option value="Nepal">Nepal</option>
-                        <option value="Country">Bhutan</option>
+                        <option value="Bhutan">Bhutan</option>
                         <option value="Kenya">Kenya</option>
                     </select>
                     </div>
@@ -61,7 +65,7 @@ export default function Form2step(){
 
                    <div className="text-grp">
                  <label for ="about">About you</label>
-                  <textarea className="area" placeholder="Leave your message here about enquiry" rows="7" cols="40"/>
+                  <textarea className="area" name="about" defaultValue={data.about} onChange={handleChange} placeholder="Leave your message here about enquiry" rows="7" cols="40"/>
                   
                    </div>
                    <div>
@@ -72,8 +76,10 @@ export default function Form2step(){
                 <div className="step">
                     <p className="foot">step 2 of 3</p>
                     <div className="corner">
-                        <a className="cancel" href="#">cancel <span className="or">or</span></a>
-                        <button className="next-btn">NEXT STEP</button>
+                        <Link to="/">Back</Link><span className="or">or</span>
+                        <Link to="/form-last">
+                            <button className="next-btn">NEXT STEP</button>
+                        </Link>
                     </div>
                 </div>
                 </div>

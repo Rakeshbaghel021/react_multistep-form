@@ -1,6 +1,8 @@
 import React from "react";
 
-export default function Form(){
+import { Link } from 'react-router-dom';
+
+export default function Form({ data, handleChange, reset }){
     return(
         <div className="main-div">
             <div className="add-user">
@@ -23,13 +25,16 @@ export default function Form(){
                 </div>
                 </div>
 <hr/>
+                <form>
                 <div className="form-group">
                     <div className="name-grp">
                  <label htmlFor="name"> Username</label>
                   <input
                   className="form-control"
-                   name="email"
+                   name="userName"
                     type="text"
+                    value={data.userName}
+                    onChange={handleChange}
                    placeholder="Enter username"/>
                    </div>
                    <div className="email-grp">
@@ -37,7 +42,9 @@ export default function Form(){
                   <input
                   className="form-control"
                    name="email"
-                    type="text"
+                    type="email"
+                    value={data.email}
+                    onChange={handleChange}
                    placeholder="Enter Email"/>
                    </div>
                    <div className="pass-grp">
@@ -45,7 +52,9 @@ export default function Form(){
                   <input
                   className="form-control"
                    name="password"
-                    type="text"
+                    type="password"
+                    value={data.password}
+                    onChange={handleChange}
                    placeholder="Enter password"/>
                    <button className="check" type="checkbox"></button>
                    <p className="show" >show password</p>
@@ -58,16 +67,18 @@ export default function Form(){
                     type="file"
                    placeholder=""/>
                    </div>
-                   
                 </div>
                 <hr/>
                 <div className="step">
                     <p className="foot">step 1 of 3</p>
                     <div className="corner">
-                        <a className="cancel" href="#">cancel <span className="or">or</span></a>
-                        <button className="next-btn">NEXT STEP</button>
+                        <p onClick={reset}> cancel </p><span className="or"> or </span>
+                        <Link to="/form2">
+                            <button className="next-btn">NEXT STEP</button>
+                        </Link>
                     </div>
                 </div>
+                </form>
                 </div>
        
     )

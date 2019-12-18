@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Formlast(){
+export default function Formlast({ handleSubmit }){
     return(
         <div className="main-div">
             <div className="add-user">
@@ -23,6 +23,7 @@ export default function Formlast(){
                 </div>
                 </div>
 <hr/>
+                <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <div className="name-grp">
                  <label htmlFor="name"> Payment type</label>
@@ -61,10 +62,11 @@ export default function Formlast(){
                 <hr/>
                 <div className="step">
                     <div className="corner">
-                        <button className="submit-btn">SUBMIT</button>
+                        <input type="submit" value="Submit" />
                         <span className="last">By submitting this form you agree with our</span><span className="terms"> Terms and Conditions</span>
                     </div>
                 </div>
+                </form>
                 </div>
        )
 }
