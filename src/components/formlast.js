@@ -34,12 +34,12 @@ export default function Formlast(){
                    <label htmlFor="email"> Credit-card</label>
                   <input
                   className="form-control"
-                   name="email"
+                   name="card"
                     type="text"
-                   placeholder=""/>
+                   placeholder=""/><span className="cvc">CVC<input className="text-cvc"></input><img className="c-card" src="credit-card.png"/></span>
                    </div>
                    <div className="pass-grp">
-                   <label htmlFor="password"> Password</label>
+                   <label htmlFor="password"> Expiration Date</label>
                   <input
                   className="form-control"
                    name="password"
