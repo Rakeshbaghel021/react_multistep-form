@@ -122,6 +122,8 @@ table {
 }
 .foot {
     margin-left: .5rem;
+   color:grey;
+    font-size: .8rem;
 }
 .next-btn{
     border-radius: 4px;
