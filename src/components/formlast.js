@@ -36,7 +36,7 @@ export default function Formlast(){
                   className="form-control"
                    name="card"
                     type="text"
-                   placeholder=""/><span className="cvc">CVC<input className="text-cvc"></input><img className="c-card" src="credit-card.png"/></span>
+                   placeholder=""/><span className="cvc">CVC<input className="text-cvc"></input><img className="c-card" src="credit-card.png"alt=""/></span>
                    </div>
                    <div className="pass-grp">
                    <label htmlFor="password"> Expiration Date</label>
@@ -66,6 +66,5 @@ export default function Formlast(){
                     </div>
                 </div>
                 </div>
-       
-    )
+       )
 }
