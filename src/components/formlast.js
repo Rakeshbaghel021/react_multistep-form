@@ -49,21 +49,20 @@ export default function Formlast(){
                    <p className="show" >show password</p>
                    </div>
                    <div className="avatar-grp">
-                   <label htmlFor="password"> Select avatar</label>
+                   <label htmlFor="password"> Name on card</label>
                   <input
                   className="form-control"
-                   name="password"
-                    type="file"
+                   name="name"
+                    type="text"
                    placeholder=""/>
                    </div>
                    
                 </div>
                 <hr/>
                 <div className="step">
-                    <p className="foot">step 1 of 3</p>
                     <div className="corner">
-                        <a className="cancel" href="#">cancel <span className="or">or</span></a>
-                        <button className="next-btn">NEXT STEP</button>
+                        <button className="submit-btn">SUBMIT</button>
+                        <span className="last">By submitting this form you agree with our</span><span className="terms"> Terms and Conditions</span>
                     </div>
                 </div>
                 </div>
