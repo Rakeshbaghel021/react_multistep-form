@@ -3,11 +3,15 @@ import React from "react";
 import { render } from "react-dom";
 
 // Relative Imports
-import "./styles/normalize.css";
+import Form from "./components/form"
 import "./styles/style.css";
 
-export default function Index() {
-  return <div>Hello World!</div>;
+export default  function App(){
+  return(
+    <>
+    <Form/>
+    </>
+  )
 }
 
-render(<Index />, document.getElementById("root"));
+render(<App />, document.getElementById("root"));
