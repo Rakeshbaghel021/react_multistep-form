@@ -149,4 +149,12 @@ table {
 }
 label{
     color:grey;
+    font-size: .8rem;
+}
+.or{
+    text-decoration: none;
+    color: black;
+}
+.cancel{
+    text-decoration: none;
 }

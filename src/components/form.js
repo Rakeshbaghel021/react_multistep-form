@@ -64,7 +64,7 @@ export default function Form(){
                 <div className="step">
                     <p className="foot">step 1 of 3</p>
                     <div className="corner">
-                        <a href="#">cancel <span>or</span></a>
+                        <a className="cancel" href="#">cancel <span className="or">or</span></a>
                         <button className="next-btn">NEXT STEP</button>
                     </div>
                 </div>
