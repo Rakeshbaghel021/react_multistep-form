@@ -51,24 +51,22 @@ export default function Form2step(){
                     </select>
                     </div>
                    <div className="pass-grp">
-                   <label htmlFor="password"> Password</label>
-                  <input
-                  className="form-control"
-                   name="password"
-                    type="text"
-                   placeholder="Enter password"/>
-                   <button className="check" type="checkbox"></button>
-                   <p className="show" >show password</p>
+                   <label htmlFor="gender"> Gender</label>
+
+                  
+                   <button className="checkgen" ><img className="man" src="standing-up-man-.png" alt="" /> Male</button>
+                   <button className="checkgen" ><img className="woman" src="woman.png" alt="" /> Female</button>
                    </div>
-                   <div className="avatar-grp">
-                   <label htmlFor="password"> Select avatar</label>
-                  <input
-                  className="form-control"
-                   name="password"
-                    type="file"
-                   placeholder=""/>
+
+
+                   <div className="text-grp">
+                 <label for ="about">About you</label>
+                  <textarea className="area" placeholder="Leave your message here about enquiry" rows="7" cols="40"/>
+                  
                    </div>
-                   
+                   <div>
+                      <a  className="code" href ="#" >HTML code <span className="allow">allowed</span></a>
+                  </div>
                 </div>
                 <hr/>
                 <div className="step">

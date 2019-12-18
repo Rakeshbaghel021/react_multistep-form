@@ -160,3 +160,24 @@ label{
 .cancel{
     text-decoration: none;
 }
+.checkgen{
+    height: 1.5rem;
+    margin-left: 1rem;
+}
+.text-grp{
+    display: flex;
+    margin-top: 2rem;
+}
+.area{
+    margin-left: 1rem;
+}
+.code{
+    text-decoration: none;
+    font-size: .8rem;
+    margin-left: 4.4rem;
+    
+}
+.allow{
+    text-decoration: none;
+    color: black;
+}
