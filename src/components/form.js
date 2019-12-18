@@ -47,9 +47,11 @@ export default function Form(){
                    name="password"
                     type="text"
                    placeholder="Enter password"/>
+                   <button className="check" type="checkbox"></button>
+                   <p className="show" >show password</p>
                    </div>
                    <div className="avatar-grp">
-                   <label htmlFor="password"> select avatar</label>
+                   <label htmlFor="password"> Select avatar</label>
                   <input
                   className="form-control"
                    name="password"
