@@ -181,3 +181,12 @@ label{
     text-decoration: none;
     color: black;
 }
+
+.visa{
+    margin-right: .7rem;
+    margin-left: .4rem;
+}
+.visa-img{
+    width: 15px;
+    height: 15px;
+}
