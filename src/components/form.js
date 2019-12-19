@@ -72,7 +72,7 @@ export default function Form({ data, handleChange, reset }){
                 <div className="step">
                     <p className="foot">step 1 of 3</p>
                     <div className="corner">
-                        <p onClick={reset}> cancel </p><span className="or"> or </span>
+                        <p className="can" onClick={reset}> cancel </p><span className="or"> or </span>
                         <Link to="/form2">
                             <button className="next-btn">NEXT STEP</button>
                         </Link>

@@ -156,9 +156,12 @@ label{
 .or{
     text-decoration: none;
     color: black;
+    
 }
-.cancel{
-    text-decoration: none;
+.can{
+    color:blue;
+    margin-right: .3rem;
+    cursor: pointer;
 }
 .checkgen{
     height: 1.5rem;
